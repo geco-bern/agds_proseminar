@@ -198,9 +198,10 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#general-information" id="toc-general-information" class="nav-link active" data-scroll-target="#general-information"><span class="header-section-number">1.1</span> General information</a></li>
-  <li><a href="#course-structure" id="toc-course-structure" class="nav-link" data-scroll-target="#course-structure"><span class="header-section-number">1.2</span> Course structure</a></li>
-  <li><a href="#schedule" id="toc-schedule" class="nav-link" data-scroll-target="#schedule"><span class="header-section-number">1.3</span> Schedule</a></li>
-  <li><a href="#evaluation" id="toc-evaluation" class="nav-link" data-scroll-target="#evaluation"><span class="header-section-number">1.4</span> Evaluation</a></li>
+  <li><a href="#course-design" id="toc-course-design" class="nav-link" data-scroll-target="#course-design"><span class="header-section-number">1.2</span> Course design</a></li>
+  <li><a href="#project-scope" id="toc-project-scope" class="nav-link" data-scroll-target="#project-scope"><span class="header-section-number">1.3</span> Project scope</a></li>
+  <li><a href="#sec-schedule" id="toc-sec-schedule" class="nav-link" data-scroll-target="#sec-schedule"><span class="header-section-number">1.4</span> Schedule</a></li>
+  <li><a href="#evaluation" id="toc-evaluation" class="nav-link" data-scroll-target="#evaluation"><span class="header-section-number">1.5</span> Evaluation</a></li>
   </ul>
 </nav>
     </div>
@@ -227,45 +228,46 @@ ul.task-list li input[type="checkbox"] {
 <section id="general-information" class="level2" data-number="1.1">
 <h2 data-number="1.1" class="anchored" data-anchor-id="general-information"><span class="header-section-number">1.1</span> General information</h2>
 <ul>
-<li><em>Lead</em> : Prof.&nbsp;Benjamin Stocker; <em>Assistance</em> : Dr.&nbsp;Laura Marqués, Pepa Arán. - Geocomputation and Earth Observation group, GIUB, UniBe.</li>
+<li><em>Lead</em> : Prof.&nbsp;Benjamin Stocker; <em>Assistance</em> : Dr.&nbsp;Laura Marqués, Pepa Arán. - Geocomputation and Earth Observation group, Institute of Geography, University of Bern.</li>
 <li>The course language is English.</li>
 <li>Classes will take place on Wednesdays 16.15 - 18.00. This is our presence time, use it for your communication with us.</li>
-<li>There will not be a presence check. Nevertheless, in class you will have the opportunity to ask for help with your project hiccups and exchange ideas with other students. Attending the presentation and feedback sessions will be helpful to submit a successful project by the end of the seminar.</li>
+<li>There will not be a presence check. In class you will have the opportunity to ask for help with your project hiccups and exchange ideas with other students. Attending the presentation and feedback sessions (<a href="#sec-schedule"><span>Section&nbsp;1.4</span></a>) is expected.</li>
 <li>Maximum capacity: 30 students.</li>
-<li>No email communication. Use your in person time.</li>
-<li>Students are expected to master contents taught in <em>480094 Applied Geodata Science I</em>. The concepts of this course will be used throughout the projects of the Proseminar in Geocomputation and Earth Observation, from coding and using git to data wrangling and analysis.</li>
+<li>No email communication. Use our presence time on Wednesdays for questions.</li>
+<li>Students are expected to master contents taught in <em>480094 Applied Geodata Science I</em>. The concepts of this course will be used throughout the projects of this course - from coding and using git to data wrangling and analysis.</li>
 <li>You will work on your own laptops, bring them to class.</li>
 </ul>
 </section>
-<section id="course-structure" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="course-structure"><span class="header-section-number">1.2</span> Course structure</h2>
+<section id="course-design" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="course-design"><span class="header-section-number">1.2</span> Course design</h2>
 <ul>
-<li>In groups of two, you will develop a data-intensive project. You will follow a reproducible workflow and the methods introduced in AGDS I. Familiarize yourself with the content in the <a href="https://geco-bern.github.io/agds/">AGDS I book</a>.</li>
-<li>The project should relate to research and data in Geography and Climate Science.</li>
-<li>Open data should be used and at least two data types combined for the analysis.</li>
-<li>A set of example questions and data will be provided. Groups that decide to work on those will be able to start implementing the project earlier, therefore will also have earlier presentation dates.</li>
+<li>In groups of two, you will conduct a simple but data-intensive small research project. The output of your project is a reproducible workflow following methods introduced in <a href="https://geco-bern.github.io/agds/">Applied Geodata Science I</a> and a short presentation.</li>
+<li>If you haven’t followed the course <a href="https://geco-bern.github.io/agds/">Applied Geodata Science I</a>, it is encouraged that you either recap essential contents taught therein and partner up with a colleague who has followed the course.</li>
+<li>Chose your own project content, get inspired by what you’ve learned in your Geography studies, and discover patterns with your own data analysis. The only requirement is that your project relates to research and data with a relation to Geography and related disciplines. You can develop you own project idea, or use our suggestions <a href="@sec-topics">here</a> as a starting point. Groups that decide to work on those will be able to start implementing the project earlier, therefore will also have earlier presentation dates.</li>
 <li>You should review the code from a group other than your own, try to run their code and provide them with feedback on the implementation and the project content itself. At the same time, you will receive feedback from another group, that you should implement in your own project.</li>
 <li>Active participation in the presentation sessions is expected, posing questions and providing feedback for a group’s presentation.</li>
 </ul>
-<p><strong>Project scope</strong></p>
+</section>
+<section id="project-scope" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="project-scope"><span class="header-section-number">1.3</span> Project scope</h2>
 <p>Your project must contain the following:</p>
 <ul>
-<li>Answer a question or verify a pattern in climate that you have studied or heard of (e.g.&nbsp;where warming is happening faster), all using data.</li>
-<li>Reason why your question/pattern is relevant and back up your hypothesis with theory.</li>
-<li>Combine at least two data sources for analysis.</li>
-<li>Both a visualisation and a modelling component.</li>
-<li>Expand data sources (outside of FLUXNET data from AGDS I). We provide a list of important data sources.</li>
+<li>Answer a research question or (re-) discover a pattern that you have studied or heard of in introductory lectures of your Geography studies.</li>
+<li>The focus is not on novelty, but on the process: Demonstrate how data is used to draw a conclusion about patterns found in nature (and the non-natural world).</li>
+<li>Provide context (why important? what is known) and explain how your analysis and results support your conclusions.</li>
+<li>Open data should be used and at least two data types should be combined for the analysis. A list of useful data sources is provided as a starting point in <a href="project_ideas.html"><span>Chapter&nbsp;4</span></a>.</li>
+<li>Work with the data, visualise patterns, and analyse relationships, differences, trends, etc.</li>
 <li>Document the whole processing and analysis of the data, from data download to result interpretations.</li>
-<li>Organize your code and data into a repository (with version control), that other students can easily reproduce. You will actually run each other’s code, so make it understandable.</li>
-<li>Present your work with slides. Each group will have 10min for their presentation, followed by 5 min for a question round.</li>
+<li>Organize your code and data into a repository (with <em>git</em>), such that other students can easily reproduce it. You will actually run each other’s code, so make it understandable.</li>
+<li>Present your work with slides. Each group will have 10 min for their presentation, followed by 5 min for questions.</li>
 </ul>
 </section>
-<section id="schedule" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="schedule"><span class="header-section-number">1.3</span> Schedule</h2>
+<section id="sec-schedule" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="sec-schedule"><span class="header-section-number">1.4</span> Schedule</h2>
 <p>There will be in total 14 sessions, scheduled as follows:</p>
-<p><strong>Sessions 1-4</strong> - Project scoping</p>
+<p><strong>Sessions 1-4</strong> - Introduction and project scoping</p>
 <ul>
-<li><em>Session 1 (20.09)</em> : Course logistics. Introduction of the example project. Forming project groups. Checkpoint R installations and GitHub repository.</li>
+<li><em>Session 1 (20.09)</em> : Course logistics. Introduction of the example project. Forming project groups. Checkpoint: R installations and GitHub repository.</li>
 </ul>
 <blockquote class="blockquote">
 <p>Before class, follow the instructions in the first chapter of the <a href="https://geco-bern.github.io/agds/">AGDS I book</a> to make sure that all the software needed for this course is installed and running. We will offer support in class, for those that encounter problems.</p>
@@ -292,8 +294,8 @@ ul.task-list li input[type="checkbox"] {
 <li><em>Session 14 (20.12)</em> : Presentations of groups 13-15.</li>
 </ul>
 </section>
-<section id="evaluation" class="level2" data-number="1.4">
-<h2 data-number="1.4" class="anchored" data-anchor-id="evaluation"><span class="header-section-number">1.4</span> Evaluation</h2>
+<section id="evaluation" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="evaluation"><span class="header-section-number">1.5</span> Evaluation</h2>
 <p>Evaluation will happen in the form of a report, followed by a presentation. Each pair of students will create a project and submit a GitHub repository, following the <a href="https://github.com/pepaaran/agds_proseminar_example">AGDS example project</a>, with all their code and a R Markdown as report. At the end of the semester, each pair will present their project to the rest of the class and exchange feedback.</p>
 <ul>
 <li>They should find recent literature that exemplifies why their question is relevant.</li>
