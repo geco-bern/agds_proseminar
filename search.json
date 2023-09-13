@@ -18,7 +18,7 @@
     "href": "index.html#learning-objectives",
     "title": "Proseminar in Geocomputation and Earth Observation",
     "section": "Learning objectives",
-    "text": "Learning objectives\nStudents that complete this course will be able to:\n\nTell a story with data.\nImplement a workflow with large geographic and environmental data in R.\nIndependently implement a workflow with large geographic and environmental data.\nPerform suitable data processing, visualizing, and modelling steps to support data interpretation and communication.\nManage analysis code for long-term reproducibility."
+    "text": "Learning objectives\nStudents that complete this course will be able to:\n\nTell a story with data.\nImplement a workflow with large geographic and environmental data in R.\nPerform suitable data processing, visualizing, and modelling steps to support data interpretation and communication.\nManage analysis code for long-term reproducibility."
   },
   {
     "objectID": "index.html#target-audience-and-prerequisites",
