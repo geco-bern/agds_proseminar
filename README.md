@@ -1,3 +1,3 @@
 # AGDS Proseminar Website
 
-This website contains all the course materials and logistics for the AGDS Proseminar. 
+This repository contains the markdown files used to generate the website for the AGDS Proseminar: https://geco-bern.github.io/agds_proseminar/
