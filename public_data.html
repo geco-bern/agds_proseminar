@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.40">
+<meta name="generator" content="quarto-1.3.433">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>3&nbsp; Public data sources – Proseminar in Geocomputation and Earth Observation</title>
+<title>Proseminar in Geocomputation and Earth Observation - 3&nbsp; Open data sources</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -38,25 +57,19 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-8ea72dc5fed832574809a9c94082fbbb.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f2e526a75abc17d413c930221ffb7d38.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-ed7e8abda2d2788c0893c9caeea0eb1f.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
+  "limit": 20,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -65,7 +78,6 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
-    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -73,7 +85,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta name="twitter:title" content="3&nbsp; Public data sources – Proseminar in Geocomputation and Earth Observation">
+<meta name="twitter:title" content="Proseminar in Geocomputation and Earth Observation - 3&nbsp; Open data sources">
 <meta name="twitter:description" content="">
 <meta name="twitter:card" content="summary">
 </head>
@@ -82,9 +94,9 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
+      <div class="navbar-brand-container">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
     <img src="./images/logo.png" alt="" class="navbar-logo">
     </a>
@@ -93,31 +105,30 @@ ul.task-list li input[type="checkbox"] {
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
-<span class="menu-text">Home</span></a>
+    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
+ <span class="menu-text">Home</span></a>
   </li>  
 </ul>
-          </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools tools-wide">
-    <a href="https://github.com/geco-bern/R_book_template/" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/geco-bern/agds_proseminar" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
     <div class="dropdown">
-      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
-      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="quarto-navigation-tool-dropdown-0">
           <li>
             <a class="dropdown-item quarto-navbar-tools-item" href="https://twitter.com/intent/tweet?url=|url|">
-              <i class="bi bi-twitter pe-1"></i>
+              <i class="bi bi-bi-twitter pe-1"></i>
             Twitter
             </a>
           </li>
           <li>
             <a class="dropdown-item quarto-navbar-tools-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
-              <i class="bi bi-facebook pe-1"></i>
+              <i class="bi bi-bi-facebook pe-1"></i>
             Facebook
             </a>
           </li>
@@ -125,23 +136,32 @@ ul.task-list li input[type="checkbox"] {
     </div>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
+          </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./public_data.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Public data sources</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./public_data.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Open data sources</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
     </div>
   </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
@@ -159,19 +179,19 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./resources.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Resources</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Essential contents</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./public_data.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Public data sources</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Open data sources</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./project_ideas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Suggested project topics</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Project ideas</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -189,17 +209,25 @@ ul.task-list li input[type="checkbox"] {
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#a-selection-of-open-research-data" id="toc-a-selection-of-open-research-data" class="nav-link active" data-scroll-target="#a-selection-of-open-research-data"><span class="header-section-number">3.1</span> A selection of open research data</a></li>
+  <li><a href="#open-research-data-repositories" id="toc-open-research-data-repositories" class="nav-link" data-scroll-target="#open-research-data-repositories"><span class="header-section-number">3.2</span> Open research data repositories</a></li>
+  <li><a href="#open-research-data-through-r-packages" id="toc-open-research-data-through-r-packages" class="nav-link" data-scroll-target="#open-research-data-through-r-packages"><span class="header-section-number">3.3</span> Open research data through R packages</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Public data sources</span></h1>
+<h1 class="title"><span id="sec-data-sources" class="quarto-section-identifier"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Open data sources</span></span></h1>
 </div>
 
 
@@ -212,13 +240,11 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
-
 </header>
 
-
-<p>Here we introduce a set of data sources to kick-start your projects. Some of these datasets are very general and will be used for multiple applications, while others contain more niche data that may spark ideas for a course project.</p>
+<p>Here we introduce a list of open data sources to kick-start your projects. Some of these datasets are very general and will be used for multiple applications, while others contain more niche data that may spark ideas for a course project.</p>
 <p>Below you’ll find a list of useful datasets in no particular order, with brief descriptions and links to the data and its documentation (follow the references for more details). This list is inspired by what we commonly use for research in the group for <a href="https://geco-group.org/">Geocomputation and Earth Observation</a>. Of course, there are a thousand other datasets out there!</p>
-<p>This <a href="https://geco-bern.github.io/agds/openscience.html#data-retention">table from the AGDS book</a> contains some widely used environmental data <em>repositories</em>, which ensure long-term storage of diverse data. You can browse through their websites to search for data that you are missing for your project implementation, if you can’t find it below.</p>
+<p>This <a href="https://geco-bern.github.io/agds_book/open_science.html#tbl-open-data-repositories">table from the AGDS book</a> contains some open research data <em>repositories</em> used in environemental sciences. Such repositories ensure long-term storage of diverse data. You can browse through their websites to search for data that you are missing for your project implementation, if you can’t find it below.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -229,9 +255,11 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Although all of the following datasets are publicly available, a fraction of them will require you to create an account in the data provider’s website and log in to download the files.</p>
+<p>Although all of the following datasets are publicly available, some of them will require you to create an account in the data provider’s website and log in to download the files.</p>
 </div>
 </div>
+<section id="a-selection-of-open-research-data" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="a-selection-of-open-research-data"><span class="header-section-number">3.1</span> A selection of open research data</h2>
 <ol type="1">
 <li><p><strong>ACi-TGlob_V1.0: A Global dataset of photosynthetic CO2 response curves of terrestrial plants</strong></p>
 <div class="callout callout-style-simple callout-note no-icon callout-titled">
@@ -884,7 +912,7 @@ Dataset description
 <ul>
 <li><a href="https://gml.noaa.gov/ccgg/" class="uri">https://gml.noaa.gov/ccgg/</a></li>
 </ul></li>
-<li><p><strong>CMIP4 climate projections</strong></p>
+<li><p><strong>CMIP6 climate projections</strong></p>
 <div class="callout callout-style-simple callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-30-contents" aria-controls="callout-30" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -917,8 +945,15 @@ Dataset description
 </div>
 </div>
 <ul>
-<li><em>Copernicus Climate Change Service, Climate Data Store, (2021): CMIP6 climate projections. Copernicus Climate Change Service (C3S) Climate Data Store (CDS). DOI: 10.24381/cds.c866074c (Accessed on DD-MMM-YYYY)</em></li>
+<li><em>Copernicus Climate Change Service, Climate Data Store, (2021): CMIP6 climate projections. Copernicus Climate Change Service (C3S) Climate Data Store (CDS). DOI: 10.24381/cds.c866074c (Accessed on DD-MMM-YYYY)</em>
+<ul>
 <li><a href="https://cds.climate.copernicus.eu/cdsapp#!/dataset/projections-cmip6" class="uri">https://cds.climate.copernicus.eu/cdsapp#!/dataset/projections-cmip6</a></li>
+</ul></li>
+<li><em>The ETH Zurich CMIP6 next generation archive</em>: Additionally homogenised version of CMIP6 model outputs, easy access.
+<ul>
+<li><a href="https://doi.org/10.5281/zenodo.3734128" class="uri">https://doi.org/10.5281/zenodo.3734128</a></li>
+<li>Code for downloading from CMIP6ng: <a href="https://github.com/geco-bern/CMIP6ng_download" class="uri">https://github.com/geco-bern/CMIP6ng_download</a></li>
+</ul></li>
 </ul></li>
 <li><p><strong>WDPA: World Database on Protected Areas</strong></p>
 <div class="callout callout-style-simple callout-note no-icon callout-titled">
@@ -1005,9 +1040,235 @@ Dataset description
 <ul>
 <li><a href="https://tntcat.iiasa.ac.at/RcpDb/dsd?Action=htmlpage&amp;page=welcome" class="uri">https://tntcat.iiasa.ac.at/RcpDb/dsd?Action=htmlpage&amp;page=welcome</a></li>
 </ul></li>
+<li><p><strong>CAMELS</strong></p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-35-contents" aria-controls="callout-35" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Dataset description
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-35" class="callout-35-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>CAMELS is the Catchment Attributes and Meteorology for Large-sample Studies. It contains data of catchment-level hydrological observations (streamflow) and aggregated attributes for river catchments in the United States.</p>
+</div>
+</div>
+</div>
+<ul>
+<li><a href="https://ral.ucar.edu/solutions/products/camels" class="uri">https://ral.ucar.edu/solutions/products/camels</a></li>
+</ul></li>
+<li><p><strong>Global Carbon Budget Data Browser (TRENDY)</strong></p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-36-contents" aria-controls="callout-36" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Dataset description
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-36" class="callout-36-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Contains the outputs of standard global vegetation and carbon cycle model simulations, used for the annually updated Global Carbon Budget (see <a href="https://geco-bern.github.io/les/globalcarbonbudget.html#sec-gcb">here</a> for a description of the Global Carbon Budget). Model outputs are provided as NetCDF files and contain monthly aggregated variables for all years (1700-present), provided on a global spatial grid.</p>
+</div>
+</div>
+</div>
+<ul>
+<li><a href="https://mdosullivan.github.io/GCB/" class="uri">https://mdosullivan.github.io/GCB/</a></li>
+</ul></li>
+<li><p><strong>HYD-RESPONSES</strong></p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-37-contents" aria-controls="callout-37" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Dataset description
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-37" class="callout-37-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>HYD-RESPONSES is the High-resolution daily catchment-level time series for relevant hydro-meteorological variables, (water) deficit accumulation and streamflow droughts for Switzerland. Similar as CAMELS (see above), it provides data at catchment levels, but for Switzerland. Time series data for meteorological variables are extracted from highest-quality available sources.</p>
+</div>
+</div>
+</div>
+<ul>
+<li><a href="https://doi.org/10.5281/zenodo.14713275" class="uri">https://doi.org/10.5281/zenodo.14713275</a></li>
+</ul></li>
+<li><p><strong>FluxDataKit</strong></p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-38-contents" aria-controls="callout-38" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Dataset description
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-38" class="callout-38-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Contains ecosystem flux data time series from an extensive set of globally distributed sites, and accompanied by locally measured meteorological variables. A more extensive documentation is available <a href="https://geco-bern.github.io/FluxDataKit/">here</a>.</p>
+</div>
+</div>
+</div>
+<ul>
+<li><a href="https://doi.org/10.5281/zenodo.14808331" class="uri">https://doi.org/10.5281/zenodo.14808331</a></li>
+</ul></li>
+<li><p><strong>TraCE-21ka</strong></p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-39-contents" aria-controls="callout-39" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Dataset description
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-39" class="callout-39-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>A physically consistent, model-based, reconstruction of global climate change over the last 21 ka (since the Last Glacial Maximum).</p>
+</div>
+</div>
+</div>
+<ul>
+<li><a href="https://trace-21k.nelson.wisc.edu/portal.html" class="uri">https://trace-21k.nelson.wisc.edu/portal.html</a></li>
+</ul></li>
+<li><p><strong>TraCE-21ka</strong></p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-40-contents" aria-controls="callout-40" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Dataset description
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-40" class="callout-40-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>A physically consistent, model-based, reconstruction of global climate change over the last 21 ka (since the Last Glacial Maximum).</p>
+</div>
+</div>
+</div>
+<ul>
+<li><a href="https://trace-21k.nelson.wisc.edu/portal.html" class="uri">https://trace-21k.nelson.wisc.edu/portal.html</a></li>
+</ul></li>
+<li><p><strong>A global database of net primary production of terrestrial ecosystems</strong></p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-41-contents" aria-controls="callout-41" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Dataset description
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-41" class="callout-41-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>The database contains estimates for below- and aboveground production for over 400 sites, spanning all major terrestrial biomes and climate regions. The dataset contains detailed descriptions of each site as well as detailed information on measurement methodology. Furthermore, the biomass production data is supplemented with data on climate and soil conditions extracted from global databases. The database can be used for studies on regional and global scales, as well as a validation and calibration dataset for global vegetation models.</p>
+</div>
+</div>
+</div>
+<ul>
+<li><a href="https://doi.org/10.6084/m9.figshare.29085488.v1" class="uri">https://doi.org/10.6084/m9.figshare.29085488.v1</a></li>
+</ul></li>
+<li><p><strong>Global Forest Carbon Database (ForC)</strong></p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-42-contents" aria-controls="callout-42" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Dataset description
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-42" class="callout-42-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>ForC is the largest database of ground-based measurements of forest ecosytsem carbon stocks and annual fluxes. It contains supplementary data including site information, stand ages, and disturbance history. All data were obtained from published, peer-reviewed sources, as detailed in <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/gcb.13226">Anderson-Teixeira et al.&nbsp;(2016)</a> and <a href="http://onlinelibrary.wiley.com/doi/10.1111/gcb.13226/abstract">Anderson-Teixeira et al.&nbsp;(2018)</a>.</p>
+</div>
+</div>
+</div>
+<ul>
+<li><a href="https://forc-db.github.io/" class="uri">https://forc-db.github.io/</a> (website)</li>
+<li><a href="https://github.com/forc-db/ForC" class="uri">https://github.com/forc-db/ForC</a> (repository)</li>
+<li><a href="https://forc.shinyapps.io/global_data_visualization/" class="uri">https://forc.shinyapps.io/global_data_visualization/</a> (Shiny app)</li>
+</ul></li>
 </ol>
+</section>
+<section id="open-research-data-repositories" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="open-research-data-repositories"><span class="header-section-number">3.2</span> Open research data repositories</h2>
+<div id="tbl-open-data-repositories" class="anchored">
+<table class="table">
+<caption>Table&nbsp;3.1: An incomplete collection of open data repositories used in Environmental sciences and Geography. A more complete list of open data repositories and other access points for open research data in Environmental science and Geography can be found at <span class="citation" data-cites="loginova_list_2025">Loginova and Varvaris (<a href="references.html#ref-loginova_list_2025" role="doc-biblioref">2025</a>)</span>. This table is a subset of <a href="https://geco-bern.github.io/agds_book/open_science.html#tbl-open-data-repositories">this table published in the Applied Geodata Science book</a></caption>
+<thead>
+<tr class="header">
+<th>Repository name</th>
+<th>URL</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Climate Data Store</td>
+<td><a href="https://cds.climate.copernicus.eu/" class="uri">https://cds.climate.copernicus.eu/</a></td>
+<td>Provides access to climate data</td>
+</tr>
+<tr class="even">
+<td>Copernicus Data Space Ecosystem</td>
+<td><a href="https://dataspace.copernicus.eu/" class="uri">https://dataspace.copernicus.eu/</a></td>
+<td>Provides access to data from the Copernicus Sentinel missions</td>
+</tr>
+<tr class="odd">
+<td>Meteoswiss Open Data</td>
+<td><a href="https://opendatadocs.meteoswiss.ch/" class="uri">https://opendatadocs.meteoswiss.ch/</a></td>
+<td>Switzerland-specific meteorological data</td>
+</tr>
+<tr class="even">
+<td>Swiss Open Government data</td>
+<td><a href="https://opendata.swiss/en/" class="uri">https://opendata.swiss/en/</a></td>
+<td>Generalist data from the Swiss Federal statistics office.</td>
+</tr>
+<tr class="odd">
+<td>Eurostat</td>
+<td><a href="https://ec.europa.eu/eurostat" class="uri">https://ec.europa.eu/eurostat</a></td>
+<td>Provides access to statistical data of Europe</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="open-research-data-through-r-packages" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="open-research-data-through-r-packages"><span class="header-section-number">3.3</span> Open research data through R packages</h2>
+<p>… for easy access to geographic and environmental data:</p>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/geodata/index.html">geodata</a>: Multiple open and widely used spatial data, accessible through one single R package. Find a complete documentation of how to access individual datasets <a href="https://rspatial.r-universe.dev/geodata/doc/manual.html">here</a>.</li>
+<li><a href="https://docs.ropensci.org/rnoaa/index.html">rnoaa</a>: An R interface to multipe data sources of the US National Oceanic and Atmospheric Administration.</li>
+<li><a href="https://docs.ropensci.org/rnaturalearth/">rnaturalearth</a>: An R package to hold and facilitate interaction with <a href="https://www.naturalearthdata.com/">Natural Earth</a> map data. This is to be combined with the package <a href="https://docs.ropensci.org/rnaturalearthdata/">rnaturalearthdata</a> which holds the actual data.</li>
+<li><a href="https://docs.ropensci.org/osmdata/">osmdata</a>: Enables accessing the data underlying OpenStreetMap (OSM)</li>
+<li><a href="https://bluegreen-labs.github.io/MODISTools/">MODISTools</a>: Functionalities for accessing Earth Observation data from the MODIS mission (and other).</li>
+<li><a href="https://bluegreen-labs.github.io/appeears/">appeears</a>: Interface to the NASA AppEEARS API for point-scale Earth Observation data access</li>
+<li><a href="https://bluegreen-labs.github.io/ecmwfr/">ecmwfr</a>: Interface to the public European Centre for Medium-Range Weather Forecasts (ECMWF) API Web Services.</li>
+<li><a href="https://bluegreen-labs.github.io/daymetr/">daymetr</a>: A programmatic interface to the <a href="https://daymet.ornl.gov/">Daymet web services</a>.</li>
+<li><a href="https://bluegreen-labs.github.io/hwsdr/">hwsdr</a>: Programmatic interface to the <a href="https://daac.ornl.gov/cgi-bin/dsviewer.pl?ds_id=1247">Harmonized World Soil Database web services</a>.</li>
+<li><a href="https://bluegreen-labs.github.io/phenocamr/">phenocamr</a>: Facilitates the retrieval and post-processing of PhenoCam time series – Red-green-blue images for tracking vegetation phenology.</li>
+</ul>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-loginova_list_2025" class="csl-entry" role="listitem">
+Loginova, Daria, and Ioannis Varvaris. 2025. <span>“The <span>List</span> of <span>Open</span> <span>Data</span> <span>Sources</span> for <span>Agricultural</span>, <span>Food</span>, <span>Land</span>, and <span>Socio</span>-<span>Economic</span> <span>Research</span>,”</span> April. <a href="https://www.alexandria.unisg.ch/handle/20.500.14171/122369">https://www.alexandria.unisg.ch/handle/20.500.14171/122369</a>.
+</div>
+</div>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1051,33 +1312,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         el.classList.add('notransition');
       }
-    }
-  }
-  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-    let newTheme = '';
-    if(darkModeDefault) {
-      newTheme = isAlternate ? baseTheme : alternateTheme;
-    } else {
-      newTheme = isAlternate ? alternateTheme : baseTheme;
-    }
-    const changeGiscusTheme = () => {
-      // From: https://github.com/giscus/giscus/issues/336
-      const sendMessage = (message) => {
-        const iframe = document.querySelector('iframe.giscus-frame');
-        if (!iframe) return;
-        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-      }
-      sendMessage({
-        setConfig: {
-          theme: newTheme
-        }
-      });
-    }
-    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-    if (isGiscussLoaded) {
-      changeGiscusTheme();
     }
   }
   const toggleColorMode = (alternate) => {
@@ -1146,15 +1380,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  const darkModeDefault = false;
-  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  let localAlternateSentinel = 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
-    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -1189,7 +1421,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const onCopySuccess = function(e) {
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -1221,48 +1464,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
-  }
-  const getTextToCopy = function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-    text: getTextToCopy
   });
-  clipboard.on('success', onCopySuccess);
-  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-      text: getTextToCopy,
-      container: window.document.getElementById('quarto-embedded-source-code-modal')
-    });
-    clipboardModal.on('success', onCopySuccess);
-  }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
-      }
-    }
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+  function tippyHover(el, contentFn) {
     const config = {
       allowHTML: true,
+      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -1272,17 +1478,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start',
+      placement: 'bottom-start'
     };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -1294,129 +1491,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
-        }
-      }
-    }
-    stripColumnClz(note)
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        container.appendChild(note.children[0].cloneNode(true));
-        for (let i = 1; i < note.children.length; i++) {
-          const child = note.children[i];
-          if (child.tagName === "P" && child.innerText === "") {
-            continue;
-          } else {
-            container.appendChild(child.cloneNode(true));
-            break;
-          }
-        }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(container);
-        }
-        return container.innerHTML
-      } else {
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(note);
-        }
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(note);
-      }
-      if (note.classList.contains("callout")) {
-        return note.outerHTML;
-      } else {
-        return note.innerHTML;
-      }
-    }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
-          }
-        } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
-          .then(res => res.text())
-          .then(html => {
-            const parser = new DOMParser();
-            const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
-            if (note !== null) {
-              const html = processXRef(id, note);
-              instance.setContent(html);
-            } 
-          }).finally(() => {
-            instance.enable();
-            instance.show();
-          });
-        }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
+      return note.innerHTML;
     });
   }
       let selectedAnnoteEl;
@@ -1460,7 +1535,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
-            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -1486,32 +1560,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -1573,18 +1621,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./resources.html" class="pagination-link" aria-label="Resources">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Resources</span></span>
+      <a href="./resources.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Essential contents</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./project_ideas.html" class="pagination-link" aria-label="Suggested project topics">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Suggested project topics</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./project_ideas.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Project ideas</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
-
 
 
 
