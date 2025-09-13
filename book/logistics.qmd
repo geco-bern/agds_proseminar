@@ -79,7 +79,6 @@ There will be in total 14 sessions, scheduled as follows (dates for fall semeste
 
 -   *Session 1 (18.09.)* : 
     - Course logistics. 
-    - Introduction of the [example project](https://github.com/pepaaran/agds_proseminar_example). 
     - Introduction of project ideas (@sec-topics) and public datasets (@sec-data-sources).
     - Checkpoint: R installations and GitHub repository.
 
