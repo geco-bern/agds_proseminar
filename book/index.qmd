@@ -6,12 +6,12 @@ title-block-banner: true
 
 ## Course description
 
-This course is organised as a semester project in which a data science workflow, using geographical and environmental data, is implemented and presented. 
+This course is organised as a semester project in which a reusable and open data science workflow, using geographical and environmental data, is implemented and presented. 
 
 ## Learning objectives
 
 - Tell a story with data.
-- Implement a workflow with large geographic and environmental data in R.
+- Implement a workflow with geographic and environmental data in R.
 - Perform suitable data processing, visualizing, and modelling steps to support data interpretation and communication.
 - Manage analysis code for long-term reproducibility.
 
@@ -19,10 +19,9 @@ This course is organised as a semester project in which a data science workflow,
 
 Bachelor students in *Geography* at the University of Bern in their 2nd or 3rd year. 
 
-The successful completion of Applied Geodata Science I or equivalent expertise is required.
-
+The successful completion of *Applied Geodata Science 1* or equivalent expertise is an advantage. If thie course has not been completed, essential contents can be learned in self-study as part of this course.
 
 -------
-This course is taught by Prof. [Benjamin Stocker](https://geco-group.org/author/benjamin-stocker/) and assisted by [Dr. Laura Marques](https://geco-group.org/author/laura-marques/) and [Pepa Arán](https://geco-group.org/author/pepa-aran/). The website and collection of learning and data resources is a product of the group for [Geocomputation and Earth Observation](https://geco-group.org/), Institute of Geography, University of Bern, compiled and curated by [Pepa Arán](https://geco-group.org/author/pepa-aran/).
+This course is taught by Prof. [Benjamin Stocker](https://geco-group.org/author/benjamin-stocker/) and assisted by [Ananda Kurth](https://geco-group.org/author/ananda-kurth/). The website and collection of learning and data resources is a product of the group for [Geocomputation and Earth Observation](https://geco-group.org/), Institute of Geography, University of Bern.
 
 ![](./images/logo_unibern_squid3.png){width="30%"} ![](./images/geco_logo_fullname.png){width="30%"}

@@ -1,16 +1,16 @@
----
-title: "Public data sources"
----
+# Open data sources {#sec-data-sources}
 
-Here we introduce a set of data sources to kick-start your projects. Some of these datasets are very general and will be used for multiple applications, while others contain more niche data that may spark ideas for a course project. 
+Here we introduce a list of open data sources to kick-start your projects. Some of these datasets are very general and will be used for multiple applications, while others contain more niche data that may spark ideas for a course project. 
 
 Below you'll find a list of useful datasets in no particular order, with brief descriptions and links to the data and its documentation (follow the references for more details). This list is inspired by what we commonly use for research in the group for [Geocomputation and Earth Observation](https://geco-group.org/). Of course, there are a thousand other datasets out there!
 
-This [table from the AGDS book](https://geco-bern.github.io/agds/openscience.html#data-retention) contains some widely used environmental data *repositories*, which ensure long-term storage of diverse data. You can browse through their websites to search for data that you are missing for your project implementation, if you can't find it below.
+This [table from the AGDS book](https://geco-bern.github.io/agds_book/open_science.html#tbl-open-data-repositories) contains some open research data *repositories* used in environemental sciences. Such repositories ensure long-term storage of diverse data. You can browse through their websites to search for data that you are missing for your project implementation, if you can't find it below.
 
 ::: callout-note
-Although all of the following datasets are publicly available, a fraction of them will require you to create an account in the data provider's website and log in to download the files.
+Although all of the following datasets are publicly available, some of them will require you to create an account in the data provider's website and log in to download the files.
 :::
+
+## A selection of open research data
 
 1.  **ACi-TGlob_V1.0: A Global dataset of photosynthetic CO2 response curves of terrestrial plants**
 
@@ -435,7 +435,7 @@ Although all of the following datasets are publicly available, a fraction of the
     
     - <https://gml.noaa.gov/ccgg/>
     
-29. **CMIP4 climate projections**
+29. **CMIP6 climate projections**
 
     ::: {.callout-note collapse="true" appearance="minimal" icon="false"} 
     # Dataset description
@@ -461,7 +461,10 @@ Although all of the following datasets are publicly available, a fraction of the
     :::
     
     - *Copernicus Climate Change Service, Climate Data Store, (2021): CMIP6 climate projections. Copernicus Climate Change Service (C3S) Climate Data Store (CDS). DOI: 10.24381/cds.c866074c (Accessed on DD-MMM-YYYY)*
-    - <https://cds.climate.copernicus.eu/cdsapp#!/dataset/projections-cmip6>
+        - <https://cds.climate.copernicus.eu/cdsapp#!/dataset/projections-cmip6>
+    - *The ETH Zurich CMIP6 next generation archive*: Additionally homogenised version of CMIP6 model outputs, easy access.
+        - <https://doi.org/10.5281/zenodo.3734128>
+        - Code for downloading from CMIP6ng: <https://github.com/geco-bern/CMIP6ng_download>
     
 30. **WDPA: World Database on Protected Areas**
 
@@ -513,3 +516,121 @@ Although all of the following datasets are publicly available, a fraction of the
     :::
      
     - <https://tntcat.iiasa.ac.at/RcpDb/dsd?Action=htmlpage&page=welcome>
+
+34. **CAMELS**
+
+    ::: {.callout-note collapse="true" appearance="minimal" icon="false"} 
+    # Dataset description
+    
+    CAMELS is the Catchment Attributes and Meteorology for Large-sample Studies. It contains data of catchment-level hydrological observations (streamflow) and aggregated attributes for river catchments in the United States.
+
+    :::
+     
+    - <https://ral.ucar.edu/solutions/products/camels>
+
+35. **Global Carbon Budget Data Browser (TRENDY)**
+
+    ::: {.callout-note collapse="true" appearance="minimal" icon="false"} 
+    # Dataset description
+    
+    Contains the outputs of standard global vegetation and carbon cycle model simulations, used for the annually updated Global Carbon Budget (see [here](https://geco-bern.github.io/les/globalcarbonbudget.html#sec-gcb) for a description of the Global Carbon Budget). Model outputs are provided as NetCDF files and contain monthly aggregated variables for all years (1700-present), provided on a global spatial grid.
+
+    :::
+     
+    - <https://mdosullivan.github.io/GCB/>
+
+36. **HYD-RESPONSES**
+
+    ::: {.callout-note collapse="true" appearance="minimal" icon="false"} 
+    # Dataset description
+    
+    HYD-RESPONSES is the High-resolution daily catchment-level time series for relevant hydro-meteorological variables, (water) deficit accumulation and streamflow droughts for Switzerland. Similar as CAMELS (see above), it provides data at catchment levels, but for Switzerland. Time series data for meteorological variables are extracted from highest-quality available sources.
+
+    :::
+     
+    - <https://doi.org/10.5281/zenodo.14713275>
+
+37. **FluxDataKit**
+
+    ::: {.callout-note collapse="true" appearance="minimal" icon="false"} 
+    # Dataset description
+    
+    Contains ecosystem flux data time series from an extensive set of globally distributed sites, and accompanied by locally measured meteorological variables. A more extensive documentation is available [here](https://geco-bern.github.io/FluxDataKit/).
+
+    :::
+     
+    - <https://doi.org/10.5281/zenodo.14808331>
+
+38. **TraCE-21ka**
+
+    ::: {.callout-note collapse="true" appearance="minimal" icon="false"} 
+    # Dataset description
+    
+    A physically consistent, model-based, reconstruction of global climate change over the last 21 ka (since the Last Glacial Maximum).
+
+    :::
+     
+    - <https://trace-21k.nelson.wisc.edu/portal.html>
+
+39. **TraCE-21ka**
+
+    ::: {.callout-note collapse="true" appearance="minimal" icon="false"} 
+    # Dataset description
+    
+    A physically consistent, model-based, reconstruction of global climate change over the last 21 ka (since the Last Glacial Maximum).
+
+    :::
+     
+    - <https://trace-21k.nelson.wisc.edu/portal.html>
+
+39. **A global database of net primary production of terrestrial ecosystems**
+
+    ::: {.callout-note collapse="true" appearance="minimal" icon="false"} 
+    # Dataset description
+    
+    The database contains estimates for below- and aboveground production for over 400 sites, spanning all major terrestrial biomes and climate regions. The dataset contains detailed descriptions of each site as well as detailed information on measurement methodology. Furthermore, the biomass production data is supplemented with data on climate and soil conditions extracted from global databases. The database can be used for studies on regional and global scales, as well as a validation and calibration dataset for global vegetation models.
+
+    :::
+     
+    - <https://doi.org/10.6084/m9.figshare.29085488.v1>
+
+40. **Global Forest Carbon Database (ForC)**
+
+    ::: {.callout-note collapse="true" appearance="minimal" icon="false"} 
+    # Dataset description
+    
+    ForC is the largest database of ground-based measurements of forest ecosytsem carbon stocks and annual fluxes. It contains supplementary data including site information, stand ages, and disturbance history. All data were obtained from published, peer-reviewed sources, as detailed in [Anderson-Teixeira et al. (2016)](https://onlinelibrary.wiley.com/doi/full/10.1111/gcb.13226) and [Anderson-Teixeira et al. (2018)](http://onlinelibrary.wiley.com/doi/10.1111/gcb.13226/abstract).
+
+    :::
+     
+    - <https://forc-db.github.io/> (website)
+    - <https://github.com/forc-db/ForC> (repository)
+    - <https://forc.shinyapps.io/global_data_visualization/> (Shiny app)
+
+## Open research data repositories
+
+| Repository name                 | URL                                  | Purpose                                             |
+|------------                     |----------                            |---------------                                      |
+| Climate Data Store              | <https://cds.climate.copernicus.eu/> | Provides access to climate data |
+| Copernicus Data Space Ecosystem | <https://dataspace.copernicus.eu/>   | Provides access to data from the Copernicus Sentinel missions |
+| Meteoswiss Open Data            | <https://opendatadocs.meteoswiss.ch/>| Switzerland-specific meteorological data |
+| Swiss Open Government data      | <https://opendata.swiss/en/>         | Generalist data from the Swiss Federal statistics office. |
+| Eurostat                        | <https://ec.europa.eu/eurostat>      | Provides access to statistical data of Europe |
+
+: An incomplete collection of open data repositories used in Environmental sciences and Geography. A more complete list of open data repositories and other access points for open research data in Environmental science and Geography can be found at @loginova_list_2025. This table is a subset of [this table published in the Applied Geodata Science book](https://geco-bern.github.io/agds_book/open_science.html#tbl-open-data-repositories) {#tbl-open-data-repositories}
+
+
+## Open research data through R packages
+
+... for easy access to geographic and environmental data:
+
+- [geodata](https://cran.r-project.org/web/packages/geodata/index.html): Multiple open and widely used spatial data, accessible through one single R package. Find a complete documentation of how to access individual datasets [here](https://rspatial.r-universe.dev/geodata/doc/manual.html). 
+- [rnoaa](https://docs.ropensci.org/rnoaa/index.html): An R interface to multipe data sources of the US National Oceanic and Atmospheric Administration.
+- [rnaturalearth](https://docs.ropensci.org/rnaturalearth/): An R package to hold and facilitate interaction with [Natural Earth](https://www.naturalearthdata.com/) map data. This is to be combined with the package [rnaturalearthdata](https://docs.ropensci.org/rnaturalearthdata/) which holds the actual data.
+- [osmdata](https://docs.ropensci.org/osmdata/): Enables accessing the data underlying OpenStreetMap (OSM)
+- [MODISTools](https://bluegreen-labs.github.io/MODISTools/): Functionalities for accessing Earth Observation data from the MODIS mission (and other).
+- [appeears](https://bluegreen-labs.github.io/appeears/): Interface to the NASA AppEEARS API for point-scale Earth Observation data access
+- [ecmwfr](https://bluegreen-labs.github.io/ecmwfr/): Interface to the public European Centre for Medium-Range Weather Forecasts (ECMWF) API Web Services.
+- [daymetr](https://bluegreen-labs.github.io/daymetr/): A programmatic interface to the [Daymet web services](https://daymet.ornl.gov/).
+- [hwsdr](https://bluegreen-labs.github.io/hwsdr/): Programmatic interface to the [Harmonized World Soil Database web services](https://daac.ornl.gov/cgi-bin/dsviewer.pl?ds_id=1247).
+- [phenocamr](https://bluegreen-labs.github.io/phenocamr/): Facilitates the retrieval and post-processing of PhenoCam time series -- Red-green-blue images for tracking vegetation phenology. 

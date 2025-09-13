@@ -1,25 +1,18 @@
-# Resources
+# Essential contents {#sec-agds}
 
-Here we list some resources that will be useful to successfully participate in the AGDS Proseminar.
+The following contents from [AGDS book](https://geco-bern.github.io/agds_book) are an essential basis for the Proseminar:
 
-## Essentials of Applied Geodata Science I {#sec-agds}
+- [Primers](https://geco-bern.github.io/agds_book/primers.html): Introduces basics of the R programming language and provides instructions for setting up the working environment with RStudio, including the installation of libraries used in this book.
+- [Reusable workflows](https://geco-bern.github.io/agds_book/reproducible_workflows.html): Motivates the adoption of reusable, project-oriented workflows and provides a guide for implementing them.
+- [Code Management](https://geco-bern.github.io/agds_book/code_management.html): Introduces the essentials of code version control using Git.
+- [Data variety](https://geco-bern.github.io/agds_book/data_variety.html): Introduces a classification of different data types and how to work with them.
+- [Data wrangling](https://geco-bern.github.io/agds_book/data_wrangling.html): Introduces how to efficiently interpret and transform tabular data.
+- [Data visualisation](https://geco-bern.github.io/agds_book/data_vis.html): Introduces the concept and logic for how to visualise different data types and axes of variation in the data.
 
-We encourage you to review some content in the [book](https://geco-bern.github.io/agds/) used during the AGDS I course, especially to freshen up knowledge on good coding practices and project management, before you start implementing your Proseminar project. The most relevant chapters and topics include:
+The remaining chapters of the [AGDS book](https://geco-bern.github.io/agds_book) focus more on modelling. We encourage you to go back to those for consultation, whenever you need them for your implementation.
 
--   [Chapter 1: Getting started.](https://geco-bern.github.io/agds/gettingstarted.html) Introduction to working with R and RStudio, including the necessary installations. Brief explanations of R projects, workspace management and git.
+Additionally, you may want to get additional information on how to work with geospatial data, and with NetCDF files in particular.
 
--   [Chapter 2: Programming primers](https://geco-bern.github.io/agds/programmingprimers.html). Basic programming concepts with R, coding style and where to find help.
-
--   [Chapter 6: Open science practices.](https://geco-bern.github.io/agds/openscience.html#openscience) Techniques used to facilitate reproducibility of your project.
-
--   [Chapter 7: Code management.](https://geco-bern.github.io/agds/codemgmt.html) Tutorial on version control using git, and how to collaborate of coding projects.
-
-The remaining chapters of the book focus more on the data wrangling and analysis. We encourage you to go back to those for consultation, whenever you need them for your implementation.
-
-## Handful of Pixels
-
-The [Handful of Pixels book](https://geco-bern.github.io/handfull_of_pixels/) covers a wide range of topics, from phenology to land cover classification, using a reduced amount of data (just a handful of pixels). Most relevant for the AGDS Proseminar are:
-
--   [Crash course in R](https://geco-bern.github.io/handfull_of_pixels/basic_R.html). From project management to tidy data, it's a condensed version of some AGDS I chapters.
--   [Roadmap to finding good data online](https://geco-bern.github.io/handfull_of_pixels/gathering_data.html), listing open source data repositories and guidelines to check the quality of data sources.
--   [Tutorial on geospatial data in R](https://geco-bern.github.io/handfull_of_pixels/geospatial_R.html). This teaches important skills that were not covered in AGDS I, but will be used in most Proseminar projects. It includes very useful information on reading several types of geospatial data (raster and shape files), performing operations and plotting, with examples with the most used R packages.
+- [Geospatial data in R](https://geco-bern.github.io/handfull_of_pixels/geospatial_R.html): This teaches important skills that were not covered in AGDS I, but will be used in most Proseminar projects. It includes very useful information on reading several types of geospatial data (raster and shape files), performing operations and plotting, with examples with the most used R packages.
+- [NetCDF in R](https://pjbartlein.github.io/REarthSysSci/netCDF.html): Chapter in *R for Earth-System Science* by Pat Bartlein.
+- [CDO](https://code.mpimet.mpg.de/projects/cdo/wiki/tutorial): A tutorial for the Climate Data Operators (CDO) -- a collection of functions that enable extremely efficient data file manipuations from the terminal (shell).

@@ -7,9 +7,9 @@ execute:
 
 book:
   title: "Proseminar in Geocomputation and Earth Observation"
-  subtitle: "Answering geography and environmental science questions with data"
-  author: "Benjamin Stocker and Pepa Arán"
-  date: "2023/09/13"
+  subtitle: "Answering questions in geography and environmental sciences with data"
+  author: "Benjamin Stocker"
+  date: "2025/09/13"
   page-navigation: true
   chapters:
     - index.qmd
@@ -22,7 +22,7 @@ book:
   favicon: "figures/favicon.ico"
   twitter-card: true
   search: true
-  repo-url: https://github.com/geco-bern/R_book_template/
+  repo-url: https://github.com/geco-bern/agds_proseminar
   sharing: [twitter, facebook]
   navbar:
     title: " "
