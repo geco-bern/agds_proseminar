@@ -60,7 +60,7 @@ Before you get started with your project, write a short proposal with the follow
 
 ## Report
 
-The report will be contained as part of your repository, in the form of an `.Rmd` file in the `./vignettes` subfolder. See the [example project](https://github.com/pepaaran/agds_proseminar_example/tree/main) for how this could look like.
+The report will be contained as part of your repository, in the form of an `.Rmd` file in the `./vignettes` subfolder. See the [example project](https://github.com/geco-bern/inaug_demo) for how this could look like.
 
 The report should put the results in the foreground and the code in the background. Effective and clear communication of results is achieved when general principles of scientific writing are followed and the report is organised along the following line:
 
@@ -118,7 +118,7 @@ There will be in total 14 sessions, scheduled as follows (dates for fall semeste
 
 ## Evaluation
 
-Project reports and presentations are evaluated. Each pair of students will create a project and submit a GitHub repository, following the [AGDS example project](https://github.com/pepaaran/agds_proseminar_example), containing all code and a [RMarkdown](https://geco-bern.github.io/agds/gettingstarted.html#rmarkdown) file as report. At the end of the semester, each pair will present their project to the rest of the class and exchange feedback.
+Project reports and presentations are evaluated. Each pair of students will create a project and submit a GitHub repository, following the [AGDS example project](https://github.com/geco-bern/inaug_demo), containing all code and a [RMarkdown](https://geco-bern.github.io/agds_book/reproducible_workflows.html#sec-vignettes) file as report. At the end of the semester, each pair will present their project to the rest of the class and exchange feedback.
 
 -   Students hand in their work in the form of a link, sent to Prof. B. Stocker, to a git repository that contains a project proposal, contained in the `README.md` file and code for a reproducible workflow (`vignettes/report.Rmd`). Furthermore, students will present their project in class.
 -   The contribution of each component to your grade is as follows:
@@ -126,7 +126,7 @@ Project reports and presentations are evaluated. Each pair of students will crea
     -   **Report** (70%).
 -   For grading the *report*, we consider the following criteria:
     -   **Reproducibility** (25%). Make sure your RMarkdown code is reproducible and generates a html document as intended. You can check this by letting a colleague clone your *git* repository and run your code on their machine. If it fails, it's not reproducible, and you won't get points for this aspect. To aid reproducibility, add text to your report that provides essential information and explanations of workflow steps, including data download, processing and analysis.
-    -   **Workspace organisation and code** (25%). Follow the principles for workspace organisation and coding as described in the AGDS book ([here](https://geco-bern.github.io/agds/gettingstarted.html#wspmgmt) and [here](https://geco-bern.github.io/agds/programmingprimers.html#programming-basics)).
+    -   **Workspace organisation and code** (25%). Follow the principles for workspace organisation and coding as described in the AGDS book ([here](https://geco-bern.github.io/agds_book/reproducible_workflows.html)).
     -   **Presentation** (25%). This considers the appearance of the generated html document, its text (with proper citations, see @sec-citing) and figures. Provide context, create at least three good data visualizations, and discuss your findings.
     -   **Analysis and modelling** (25%). This considers the correctness of analysis and modelling implementations, and the reasonable application of methods.
 -   Each pair of students will hand in a single report.
