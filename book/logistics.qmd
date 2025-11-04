@@ -40,27 +40,36 @@ Your project must contain the following:
 
 Before you get started with your project, write a short proposal with the following described below. This allows you to clarify the aim, identify steps that need to be taken to achieve your aims, and to have a basis for us to give feedback on your plan.
 
+**Addendum (4 Nov. 2025): ** Add the proposal to the Git repository which will contain the report, submitted at the end (see @sec-report). It may either be contained in the `README` or as a separate `.Rmd` or `.qmd` file in the `./vignettes` subfolder.
+
 **1. Summary** (max. 100 words)
 
-**2. Background and motivation**\
+**2. Background and motivation** 
+
 *Why is your project important? What is known and unknown?*
 
-**3. Objective**\
-*Describe the goal of your project. What will be the result, answering what question?*
+**3. Objective**
 
-**4. Implementation**\
+*Describe the goal of your project. What will be the results, answering what question(s)?*
+
+**4. Implementation**
+
 *What approach will you take to achieve the goal in terms of data and methods?*
 
-**5. Responsibilities and timeline**\
+**Addendum (4 Nov. 2025): ** This section should demonstrate the feasibility of your analysis and appropriateness of your data in providing the information needed to answer your questions. For this, access the data and perform some initial data explorations, creating outputs that support your demonstration. Include these outputs in your proposal. Also, be specific about how the data will be processed, visualised, and analysed and how these methodological steps yield answers to your question. The goal of this part of the proposal is to demonstrate that the data contains the information you need for performing the planned analyses and answering your questions. Such a demonstration can be done, e.g., for a small subset of the data and should not contain the analysis and final visualisations themselves. But it should demonstrate that you will not face any "road blocks" further into the project.
+
+**5. Responsibilities and timeline**
+
 *Who will do what (if group work)? When will you finalize what part of the implementation?*
 
-**6. Risks and contingency**\
+**6. Risks and contingency**
+
 *What risks and challenges do you expect and what will you do to address them?*
 
 
-## Report
+## Report {#sec-report}
 
-The report will be contained as part of your repository, in the form of an `.Rmd` file in the `./vignettes` subfolder. See the [example project](https://github.com/geco-bern/inaug_demo) for how this could look like.
+The report will be contained as part of your repository, in the form of an `.Rmd` or `.qmd` file in the `./vignettes` subfolder. See the [example project](https://github.com/geco-bern/inaug_demo) for how this could look like.
 
 The report should put the results in the foreground and the code in the background. Effective and clear communication of results is achieved when general principles of scientific writing are followed and the report is organised along the following line:
 
